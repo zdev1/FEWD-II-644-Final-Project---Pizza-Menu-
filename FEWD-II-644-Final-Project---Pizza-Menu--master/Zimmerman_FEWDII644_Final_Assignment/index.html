@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <!--Link to CSS Stylesheet -->
+    <link rel="stylesheet" href="CSS/styles.css">
+    
+    <!-- This Page CSS -->
+    <style>
+        .jumbotron{
+    padding-top: 22em;
+    margin-bottom: 0px;
+    background: url(images/pizza%20jumbtron%20image.jpg)
+    no-repeat fixed;
+   -webkit-background-size: cover;
+   -moz-background-size: cover;
+   background-size: cover;
+   -o-background-size: cover;
+    height: 500px;
+    border: solid;
+    border-width:.3em;
+        }
+      #navbar{
+    position: absolute;
+    z-index: 20;
+    width: 90%;
+    height: 55px;
+    margin-top: 130px;
+    margin-left: 50px;
+    margin-right: 50px;
+    font-size: 20px;
+    background-color: none;
+}
+        }  
+        
+      </style>  
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+    <title>Pizza Order Form - FEWD II Final Project</title>
+  </head>
+  
+  
+ <!-- Navbar starts here -->
+  <body>
+  <div class="container-fluid">
+    <div class="container">
+   <nav class="navbar sticky-top navbar-expand-lg" href="#" id="navbar">
+   
+  <a class="navbar-brand text-center" href="#"><img src="images/zpizzalogo.png" style="width: 500px; height: 500px;"></a>
+</nav>
+     
+    <!-- Navbar ends here -->
+     
+     
+     <!-- Jumbotron starts here -->
+    
+     
+      <div class="jumbotron">
+        
+        <h1 class="text-center" style="color: white; font-size: 2.5em; margin-top: 200px; background-color: black">The Best Pizza...Anywhere</h1>
+        <p class="lead text-center" style="color: red; font-size: 2em; margin-top: 30px; background-color: black; font-weight: bold">Try it for yourself! Order Below and get $5 off !</p>
+
+      </div>
+      
+      <!-- Jumbotron ends here -->
+      
+      
+      <!-- Your Information Form starts here -->
+      <div class="orderform">
+          <p class="h3" style="color: black"><strong><i>Your Information</i></strong></p><br>
+      <form>
+  <div class="form-row">
+    <div class="form-group col-md-6">
+      <label for="inputFirstName" style="color: red">First Name</label>
+      <input type="name" class="form-control" id="inputFirstName" placeholder="John">
+    </div>
+    <div class="form-group col-md-6">
+      <label for="inputLastName" style="color: red">Last Name</label>
+      <input type="name" class="form-control" id="inputLastName" placeholder="Smith">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="inputAddress" style="color: red">Address</label>
+    <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+  </div>
+  <div class="form-group">
+      <div class="input-group mb-3">
+  <div class="input-group-prepend">
+    <label class="input-group-text" for="inputGroupSelect01"></label>
+  </div>
+  <select class="custom-select" id="inputGroupSelect01">
+    <option selected>Address Type</option>
+    <option value="1" style="color: black">house</option>
+    <option value="2" style="color: black">apartment</option>
+    <option value="3" style="color: black">business</option>
+    <option value="1" style="color: black">campus</option>
+    <option value="2" style="color: black">hotel</option>
+    <option value="3" style="color: black">dorm</option>
+    <option value="3" style="color: black">other</option>
+   <!-- Textarea for other  <div class="input-group">
+  <div class="input-group-prepend">
+    <span class="input-group-text">Other</span>
+  </div>
+  <textarea class="form-control" aria-label="With textarea"></textarea>
+</div>-->
+  </select>
+</div>
+  </div>
+  <div class="form-group">
+    <label for="inputAddress2" style="color: red">Address 2</label>
+    <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+  </div>
+  <div class="form-row">
+    <div class="form-group col-md-6">
+      <label for="inputCity" style="color: red">City</label>
+      <input type="text" class="form-control" id="inputCity">
+    </div>
+    <div class="form-group col-md-4">
+      <label for="inputState" style="color: red">State</label>
+      <select id="inputState" class="form-control">
+        <option selected>Choose...</option>
+        <option>...</option>
+      </select>
+    </div>
+    <div class="form-group col-md-2">
+      <label for="inputZip" style="color: red">Zip</label>
+      <input type="text" class="form-control" id="inputZip">
+    </div>
+  </div>
+    <div class="form-row">
+    <div class="form-group col-md-6">
+      <label for="inputPhoneNumber" style="color: red">Phone Number</label>
+      <input type="number" class="form-control" id="inputPhoneNumber" placeholder="000-000-0000">
+    </div>
+    <div class="form-group col-md-6">
+      <label for="inputEmail" style="color: red">Email</label>
+      <input type="email" class="form-control" id="inputEmail" placeholder="johnsmith@gmail.com">
+    </div>
+  </div>
+  </form>
+  
+  <!-- Your Information Section Form Ends Here -->
+            <br><br><br>
+  <!-- Customize Your Pizza Form starts here -->
+                
+                
+                <!-- type of crust -->
+ <p class="h3" style="color: black"><strong><i>Customize Your Pizza!</i></strong></p><br>
+ <p class="h5" style="color: silver"><i>Pick Your Crust</i></p>
+<div class="radio">
+  <label style="color: red"><input type="radio" name="optradio"  checked>Hand Tossed</label>
+</div>
+<div class="radio">
+  <label style="color: red"><input type="radio" name="optradio" >Thin Crust</label>
+</div>
+<div class="radio disabled">
+  <label style="color: red"><input type="radio" name="optradio" disabled>New York Style</label>
+</div>
+<div class="radio disabled">
+  <label style="color: red"><input type="radio" name="optradio" disabled>Gluten Free</label>
+</div>
+ <br>
+ 
+          <!-- type of cheese -->
+    <p class="h5" style="color: silver"><i>Pick Your Cheese</i></p>
+   <div class="form-group">
+      <div class="input-group mb-3">
+  <div class="input-group-prepend">
+    <label class="input-group-text" for="inputGroupSelect01"></label>
+  </div>
+  <select class="custom-select" id="inputGroupSelect01">
+    <option selected style="color: red">Normal (no extra charge)</option>
+    <option value="1" style="color: red">Light (no extra charge)</option>
+    <option value="3" style="color: red">Extra (+$2.99)</option>
+    <option value="1" style="color: red">Double (+$3.99)</option>
+  </select>
+</div>
+  </div>
+  <br>
+  
+        <!-- Customize your pizza form ends here -->
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      </div>
+      </div>
+      </div>
+      <footer> <div class="row" id="footer">
+          <div class="col-sm-12 center-block text-center text-light"><h5>&copy; Z Pizza 2019</h5></div></div><br><br>
+      </footer>
+
+    <!-- /container -->
+
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+    
+    
+    
+    
+    
+    
+    
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  </body>
+</html>
